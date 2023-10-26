@@ -16,18 +16,27 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "icon": "./assets/images/icon.png",
+      "splash": {
+        "image": "./assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "bundleIdentifier": "com.myapp",
+      "appStoreUrl": "app store url"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "androidPackage": "package",
+      "playStoreUrl": "play store url"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png",
+      "favicon": "./assets/images/icon.png",
       "barStyle": "black-translucent",
       "backgroundColor": "#ffffff",
       "description": "A PWA using Expo Web",
@@ -54,7 +63,20 @@
         "image": "./assets/images/splash.png",
         "resizeMode": "contain",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "relatedApplications": [
+        {
+          "platform": "itunes",
+          "url": "app store url",
+          "id": "iOS bundle identifier"
+        },
+        {
+          "platform": "play",
+          "url": "play store url",
+          "id": "android package"
+        }
+      ],
+      "preferRelatedApplications": true
     },
     "plugins": ["expo-router"],
     "experiments": {
