@@ -1,7 +1,9 @@
 {
   "expo": {
     "name": "my-app",
+    "description": "A PWA using Expo Web",
     "slug": "my-app",
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -26,7 +28,33 @@
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png",
-      "barStyle": "black-translucent"
+      "barStyle": "black-translucent",
+      "backgroundColor": "#ffffff",
+      "description": "A PWA using Expo Web",
+      "display": "standalone",
+      "lang": "en",
+      "name": "my-app",
+      "shortName": "my-app",
+      "orientation": "portrait",
+      "scope": "/",
+      "manifest": {
+        "display": "standalone",
+        "orientation": "portrait",
+        "themeColor": "#ffffff"
+      },
+      "themeColor": "#ffffff",
+      "icon": "./assets/images/icon.png",
+      "icons": {
+        "16": "./assets/images/icon.png",
+        "32": "./assets/images/icon.png",
+        "48": "./assets/images/icon.png",
+        "128": "./assets/images/icon.png"
+      },
+      "splash": {
+        "image": "./assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      }
     },
     "plugins": ["expo-router"],
     "experiments": {
